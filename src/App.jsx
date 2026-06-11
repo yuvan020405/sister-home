@@ -2,6 +2,11 @@ import sister from "./assets/sister.jpg";
 import couple1 from "./assets/couple1.jpg";
 import couple2 from "./assets/couple2.jpg";
 import couple3 from "./assets/couple3.jpg";
+import couple4 from "./assets/couple4.jpg";
+import couple5 from "./assets/couple5.jpg";
+import couple8 from "./assets/couple8.jpg";
+import couple12 from "./assets/couple12.jpg";
+import couple13 from "./assets/couple13.jpg";
 import music from "./assets/music.mp3";
 import { FaHeart } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -23,7 +28,7 @@ export default function App() {
 });
 const [scrollProgress, setScrollProgress] = useState(0);
 const [currentSlide, setCurrentSlide] = useState(0);
-const slides = [couple1, couple2, couple3];
+const slides = [couple13, sister, couple5];
 const toggleMusic = () => {
 
   if (isPlaying) {
@@ -633,7 +638,7 @@ const fadeUp = {
     transition={{ duration: 2 }}
     className="absolute inset-0"
     style={{
-      backgroundImage: `url(${couple2})`,
+      backgroundImage: `url(${sister})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundAttachment: "fixed",
@@ -685,7 +690,7 @@ const fadeUp = {
           >
 
             <img
-              src={couple1}
+              src={couple4}
               className="w-full h-[350px] md:h-[500px] object-cover hover:scale-105 transition duration-700"
             />
 
